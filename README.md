@@ -4,4 +4,4 @@ My personal dot files configuration
 Manage easily with `stow`. Clone the repository in the $HOME folder and execute:
 ```sh
 stow .
-``
+```
