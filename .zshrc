@@ -8,6 +8,11 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+#keybindings
+
+bindkey -v 'Ctrl+Shift+L' clear # Ctrl + Shift + L to clear the screen
+
+
 # alias
 alias ls='ls --color=auto'
      #alias dir='dir --color=auto'
@@ -42,7 +47,7 @@ function git_branch_name()
 
 # Enable substitution in the prompt.
 setopt prompt_subst
-
+export XDG_CONFIG_HOME=~/.config/
 
 PROMPT='%(?.%F{green}➜ .%F{red}➜ )%f %B%F{cyan}%1~%f%b %B%F{219}$(git_branch_name)%f%b%# '
 RPROMPT="%T"
@@ -50,6 +55,9 @@ RPROMPT="%T"
 #Allow history
 SAVEHIST=1000  # Save most-recent 1000 lines
 HISTFILE=~/.zsh_history
+
+#
+
 
 #Kubbernetes
  alias k=kubectl 
@@ -65,7 +73,9 @@ export PATH=$PATH:~/.cache/rebar3/bin
 
 #Android
 export ANDROID_HOME=/home/arejula27/Android/Sdk
+PATH=$PATH:/home/arejula27/android-studio/bin
 PATH=$PATH:/home/arejula27/bin/flutter/bin
+PATH=$PATH:$ANDROID_HOME/platform-tools/
 
 #LunarVim
 PATH=$PATH:/home/arejula27/.local/bin
