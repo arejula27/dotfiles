@@ -1,2 +1,11 @@
-window.opacity= 0.95
+
 import = ["~/.config/alacritty/rose-pine.toml"]
+[window]
+opacity= 0.95
+decorations= "None"
+[window.padding]
+x = 5
+y =5
+
+[font]
+normal.family = "JetBrainsMono Nerd Font"
