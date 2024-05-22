@@ -10,7 +10,6 @@ compinit
 
 #keybindings
 
-bindkey -v 'Ctrl+Shift+L' clear # Ctrl + Shift + L to clear the screen
 
 
 # alias
@@ -92,4 +91,4 @@ export KRB5_CONFIG=$HOME/.ssh/krb5.config
 export KRB5CCNAME=$HOME/.ssh/krb5cc
 
 
- [[ /usr/local/bin/devpod ]] && source <(devpod completion zsh)
+source <(devbox completion zsh); compdef _devbox devbox
