@@ -48,9 +48,10 @@ function git_branch_name()
 setopt prompt_subst
 export XDG_CONFIG_HOME=~/.config/
 
-PROMPT='%(?.%F{green}➜ .%F{red}➜ )%f %B%F{cyan}%1~%f%b %B%F{219}$(git_branch_name)%f%b%# '
-RPROMPT="%T"
-
+# My custom prompt is deprecated now use starship
+#PROMPT='%(?.%F{green}➜ .%F{red}➜ )%f %B%F{cyan}%1~%f%b %B%F{219}$(git_branch_name)%f%b%# '
+#RPROMPT="%T"
+eval "$(starship init zsh)"
 #Allow history
 SAVEHIST=1000  # Save most-recent 1000 lines
 HISTFILE=~/.zsh_history
@@ -65,6 +66,7 @@ HISTFILE=~/.zsh_history
 #Go
 GOPATH=$HOME/go
 GOROOT=$HOME/go
+export PATH=$PATH:/usr/local/go/bin
 PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export TERM=xterm
 export PATH=$PATH:~/.cache/rebar3/bin
@@ -92,3 +94,10 @@ export KRB5CCNAME=$HOME/.ssh/krb5cc
 
 
 source <(devbox completion zsh); compdef _devbox devbox
+
+# bun completions
+[ -s "/home/arejula27/.bun/_bun" ] && source "/home/arejula27/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
