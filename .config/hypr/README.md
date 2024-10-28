@@ -46,6 +46,7 @@ This repository provides an overview and setup guide for custom keybindings in t
 |--------------------|-----------------------|
 | `$mainMod + [1-9]` | Switch to workspace 1-9 |
 | `$mainMod + 0`     | Switch to workspace 10 |
+| `$mainMod + CTRL + Arrow`| Switch to next/previous workspace |
 
 #### Moving Windows to Workspaces
 | Key Combination           | Action                   |
