@@ -23,6 +23,14 @@ alias egrep='egrep --color=auto'
 alias vim=nvim
 alias cat=bat
 
+#git aliases
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gap='git add -p'
+alias gp='git push'
+alias gpl='git pull'
+
 export EDITOR='nvim'
 
 #Prompt
@@ -67,3 +75,5 @@ PATH=$PATH:/home/arejula27/.lua-lsp/bin
 
 source <(devbox completion zsh); compdef _devbox devbox
 
+
+export PATH=$PATH:/home/arejula27/.spicetify
