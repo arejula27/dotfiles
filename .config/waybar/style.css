@@ -161,6 +161,14 @@ window#waybar.empty #window {
   border-left: 0px;
   padding-right: 15px;
 }
+
+#tray {
+  border-radius: 8px 0px 0px 8px;
+  border-right: 0px;
+  margin-right: 0px;
+
+}
+
 #custom-spotify {
   border-radius: 8px;
   margin-top: 10px;
@@ -173,5 +181,19 @@ window#waybar.empty #window {
   border-width: 2px;
   border-style: solid;
   border-color: @pine;
+
+}
+#custom-exit {
+  color: @foam;
+  background: @base;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @pine;
+  border-radius: 0 8px 8px 0;
+  margin-right: 0px;
+  border-left: 0px;
+  padding-right: 15px;
+  margin-right: 20px;
+  margin-top: 10px;
 
 }

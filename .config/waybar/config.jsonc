@@ -8,7 +8,7 @@
     // "modules-left": ["hyprland/workspaces", "hyprland/mode", "hyprland/scratchpad", "custom/media"],
     "modules-left": ["hyprland/workspaces","custom/spotify"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "network", "battery", "tray", ],
+    "modules-right": ["pulseaudio", "network", "battery", "tray", "custom/exit"],
     // Modules configuration
     "hyprland/workspaces": {
           "disable-scroll": true,
@@ -177,5 +177,10 @@
         "escape": true,
         // "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
          "exec": "$HOME/.config/waybar/modules/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    }
+    },
+   "custom/exit": {
+        "format": "",
+        "on-click": "wlogout",
+        "tooltip-format": "Power Menu"
+  },
 }
