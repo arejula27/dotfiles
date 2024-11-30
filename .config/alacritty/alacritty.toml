@@ -12,4 +12,4 @@ normal.family = "JetBrainsMono Nerd Font"
 
 [general]
 
-import = ["~/.config/alacritty/rose-pine.toml"]
+import = ["~/.config/alacritty/gruvbox_dark.toml"]
