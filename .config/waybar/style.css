@@ -17,7 +17,7 @@ window#waybar {
 tooltip {
   background: @base;
   border-radius: 4px;
-  border-width: 2px;
+  border-width: 0px;
   border-style: solid;
   border-color: @overlay;
 }
@@ -67,7 +67,7 @@ tooltip {
   padding: 0px 10px;
   margin: 0px 0px;
   margin-top: 10px;
-  border: 2px solid @pine;
+  border: 0px solid @pine;
 }
 #spotify,
 
@@ -178,7 +178,7 @@ window#waybar.empty #window {
   opacity: 0.9;
   padding: 0px 10px;
   font-size: 14px;
-  border-width: 2px;
+  border-width: 0px;
   border-style: solid;
   border-color: @pine;
 
@@ -186,7 +186,7 @@ window#waybar.empty #window {
 #custom-exit {
   color: @foam;
   background: @base;
-  border-width: 2px;
+  border-width: 0px;
   border-style: solid;
   border-color: @pine;
   border-radius: 0 8px 8px 0;
