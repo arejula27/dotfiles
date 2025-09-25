@@ -1,7 +1,7 @@
 [window]
 dimensions.columns = 100
 dimensions.lines = 30
-opacity= 0.90
+opacity= 0.85
 decorations= "None"
 [window.padding]
 x = 5
