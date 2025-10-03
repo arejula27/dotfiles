@@ -1,20 +1,21 @@
 * {
   font-family: JetBrainsMonoNerdFontMono;
   font-size: 24px;
-  transition-property: background-color;
-  transition-duration: 0.7s;
+  transition-property: background-color, color, border-color;
+  transition-duration: 0.5s;
 }
 
 window {
-  background-color: rgba(40, 40, 40, 0.1);
-  border-radius: 10px;
+  background-color: rgba(25, 23, 36, 0.9); /* base with transparency */
+  border-radius: 12px;
 }
 
 button {
-  color: #ebdbb2;
-  background-color: #076678;
+  color: #e0def4; /* text */
+  background-color: #1f1d2e; /* surface */
   border-style: solid;
   border-width: 3px;
+  border-color: #c4a7e7; /* iris */
   border-radius: 50px;
   background-repeat: no-repeat;
   background-position: center;
@@ -22,38 +23,58 @@ button {
   margin: 15px;
 }
 
-button:active,
 button:hover {
-  background-color: #458388;
+  background-color: #26233a; /* highlight */
+  border-color: #9ccfd8; /* foam */
+}
+
+button:active {
+  background-color: #eb6f92; /* love */
+  border-color: #eb6f92;
+  color: #191724; /* dark text for contrast */
 }
 
 button:focus {
-  background-color: #458488;
+  background-color: #f6c177; /* gold */
+  border-color: #f6c177;
+  color: #191724;
 }
 
+/* Icons */
 #lock {
-  background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+  background-image: image(url("/usr/share/wlogout/icons/lock.png"),
+                          url("/usr/local/share/wlogout/icons/lock.png"));
 }
 
 #logout {
-  background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+  background-image: image(url("/usr/share/wlogout/icons/logout.png"),
+                          url("/usr/local/share/wlogout/icons/logout.png"));
 }
 
 #suspend {
   background-image: image(url("/usr/share/wlogout/icons/suspend.png"),
-      url("/usr/local/share/wlogout/icons/suspend.png"));
-}
-
-#hibernate {
-  background-image: image(url("/usr/share/wlogout/icons/hibernate.png"),
-      url("/usr/local/share/wlogout/icons/hibernate.png"));
+                          url("/usr/local/share/wlogout/icons/suspend.png"));
 }
 
 #shutdown {
   background-image: image(url("/usr/share/wlogout/icons/shutdown.png"),
-      url("/usr/local/share/wlogout/icons/shutdown.png"));
+                          url("/usr/local/share/wlogout/icons/shutdown.png"));
 }
 
 #reboot {
-  background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+  background-image: image(url("/usr/share/wlogout/icons/reboot.png"),
+                          url("/usr/local/share/wlogout/icons/reboot.png"));
 }
+
+/* Hide button (invisible) */
+
+#hide {
+  background: none;
+  border: none;
+  color: transparent;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
