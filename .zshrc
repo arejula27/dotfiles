@@ -61,6 +61,8 @@ HISTFILE=~/.zsh_history
  alias k=kubectl 
  [[ /usr/sbin/kubectl ]] && source <(kubectl completion zsh)
 
+#Path
+PATH=$PATH:$HOME/bin/
 #Go
 GOPATH=$HOME/go
 GOROOT=$HOME/go
@@ -74,6 +76,3 @@ PATH=$PATH:/home/arejula27/.lua-lsp/bin
 
 
 source <(devbox completion zsh); compdef _devbox devbox
-
-
-export PATH=$PATH:/home/arejula27/.spicetify
